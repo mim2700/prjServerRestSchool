@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+	<comment>Management Board - Student Query</comment>
+	<entry key="student.list">
+		SELECT 
+			grno AS GR_NUMBER, 
+			stu_f_name AS STD_FIRST_NAME,
+			stu_m_name AS STD_MIDDLE_NAME,
+			stu_l_name AS STD_LAST_NAME,
+			stu_class  AS STD_CLASS,
+			parent_f_name AS PARENT_FIRST_NAME,
+			parent_m_name AS PARENT_MIDDLE_NAME,
+			parent_l_name AS PARENT_LAST_NAME,
+			parent_email_01 AS PARENT_EMAIL_01,
+			parent_email_02 AS PARENT_EMAIL_02,
+			parent_phone_mob_01 AS PARENT_PHONE_MOB_01,
+			parent_phone_mob_02 AS PARENT_PHONE_MOB_02,
+			parent_phone_off_01 AS PARENT_PHONE_OFF_01,
+			parent_phone_off_02 AS PARENT_PHONE_OFF_02,
+			parent_phone_home_01 AS PARENT_PHONE_HOME_01,
+			parent_phone_home_02 AS PARENT_PHONE_HOME_02,
+			parent_relation AS PARENT_RELATION,
+			parent_address AS PARENT_ADDRESS
+			
+			
+		FROM
+			board_student
+	</entry>
+	
+	<entry key="student.list.class">
+		SELECT 
+			grno AS GR_NUMBER, 
+			stu_f_name AS STD_FIRST_NAME,
+			stu_m_name AS STD_MIDDLE_NAME,
+			stu_l_name AS STD_LAST_NAME,
+			stu_class  AS STD_CLASS,
+			parent_f_name AS PARENT_FIRST_NAME,
+			parent_m_name AS PARENT_MIDDLE_NAME,
+			parent_l_name AS PARENT_LAST_NAME,
+			parent_email_01 AS PARENT_EMAIL_01,
+			parent_email_02 AS PARENT_EMAIL_02,
+			parent_phone_mob_01 AS PARENT_PHONE_MOB_01,
+			parent_phone_mob_02 AS PARENT_PHONE_MOB_02,
+			parent_phone_off_01 AS PARENT_PHONE_OFF_01,
+			parent_phone_off_02 AS PARENT_PHONE_OFF_02,
+			parent_phone_home_01 AS PARENT_PHONE_HOME_01,
+			parent_phone_home_02 AS PARENT_PHONE_HOME_02,
+			parent_relation AS PARENT_RELATION,
+			parent_address AS PARENT_ADDRESS
+			
+			
+		FROM
+			board_student
+		where
+			stu_class = :paramClass
+	</entry>
+	<entry key="student.list.grno">
+		SELECT 
+			grno AS GR_NUMBER, 
+			stu_f_name AS STD_FIRST_NAME,
+			stu_m_name AS STD_MIDDLE_NAME,
+			stu_l_name AS STD_LAST_NAME,
+			stu_class  AS STD_CLASS,
+			parent_f_name AS PARENT_FIRST_NAME,
+			parent_m_name AS PARENT_MIDDLE_NAME,
+			parent_l_name AS PARENT_LAST_NAME,
+			parent_email_01 AS PARENT_EMAIL_01,
+			parent_email_02 AS PARENT_EMAIL_02,
+			parent_phone_mob_01 AS PARENT_PHONE_MOB_01,
+			parent_phone_mob_02 AS PARENT_PHONE_MOB_02,
+			parent_phone_off_01 AS PARENT_PHONE_OFF_01,
+			parent_phone_off_02 AS PARENT_PHONE_OFF_02,
+			parent_phone_home_01 AS PARENT_PHONE_HOME_01,
+			parent_phone_home_02 AS PARENT_PHONE_HOME_02,
+			parent_relation AS PARENT_RELATION,
+			parent_address AS PARENT_ADDRESS
+			
+			
+		FROM
+			board_student
+		where
+			grno = :paramGrNo
+	</entry>
+	
+</properties>
